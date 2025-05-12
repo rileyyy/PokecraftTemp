@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://db42ddjcwjen4"]
+
+[ext_resource type="Script" uid="uid://da5h6l6k0pwyq" path="res://scripts/Overworld.cs" id="1_fbne1"]
+[ext_resource type="PackedScene" uid="uid://5dsg3shkvfyj" path="res://scenes/Player.tscn" id="1_qddpt"]
+[ext_resource type="Script" uid="uid://bynk22kb27blw" path="res://scripts/MapManager.cs" id="2_nnf0d"]
+
+[node name="Overworld" type="Node2D"]
+script = ExtResource("1_fbne1")
+
+[node name="MapManager" type="Node2D" parent="."]
+script = ExtResource("2_nnf0d")
+
+[node name="Player" parent="." instance=ExtResource("1_qddpt")]
